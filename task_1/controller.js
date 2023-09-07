@@ -14,7 +14,7 @@ const getUsers = function (req, res) {
     );
   });
 
-  res.json({ userData });
+  res.json(userData);
 };
 
 module.exports = getUsers;
