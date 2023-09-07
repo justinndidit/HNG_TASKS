@@ -4,7 +4,7 @@ const getUsers = function (req, res) {
   const { slack_name, track } = req.query;
 
   if (!slack_name || !track) {
-    return res.json({ Data });
+    return res.json(Data);
   }
 
   const userData = Data.find(function (data) {
