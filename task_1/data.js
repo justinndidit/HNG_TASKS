@@ -8,12 +8,13 @@ const daysOfWeek = [
   "Saturday",
 ];
 
+const now = new Date();
+
 module.exports = [
   {
     slack_name: "Olasoji Favour",
     current_day: daysOfWeek[new Date().getDay()],
-    //utc_time: new Date().toISOString().replace(/\.\d{3}Z$/, "Z"),
-    utc_time: new Date().toISOString().slice(0, 19) + "Z",
+    utc_time: now.toISOString().slice(0, 19) + "Z",
 
     track: "backend",
     github_file_url:
